@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>SP Avatr — Support</title>
+<meta name="description" content="Support and contact for SP Avatr, an iPhone companion app that restarts the service on a car head unit over Wi-Fi.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <img src="icon.jpg" alt="SP Avatr app icon">
+  <div>
+    <h1>SP Avatr</h1>
+    <p>Support</p>
+  </div>
+</header>
+
+<p>SP Avatr restarts the companion service on a car's head unit from your phone, over the Wi-Fi you and the car are both on. If something isn't working, start here — and if the answer isn't below, get in touch.</p>
+
+<h2>Contact</h2>
+<div class="contact">
+  <a href="mailto:dsokpheang@gmail.com">dsokpheang@gmail.com</a>
+  <a href="tel:+85516466669">+855 16 466 669</a>
+</div>
+<p>Email is usually answered within a day or two. Please include what the status card said and, if you can, the last few lines from <strong>Settings → Activity log</strong> — that log is written for exactly this purpose.</p>
+
+<h2>Common questions</h2>
+
+<div class="card">
+  <h3>It says “No ADB Connection”</h3>
+  <p>Wireless debugging has to already be switched on for the head unit. The app doesn't turn it on and can't — it uses a connection you've enabled yourself. Turn it back on from a computer, then pull down to refresh.</p>
+</div>
+
+<div class="card">
+  <h3>It worked, then stopped after I restarted the car</h3>
+  <p>This is the same thing as above. Powering the car off switches wireless debugging off again, so the app loses the car until it's re-enabled. Nothing is broken and nothing needs reinstalling.</p>
+</div>
+
+<div class="card">
+  <h3>It can't find the car</h3>
+  <p>Your phone and the car have to be on the same Wi-Fi network — either the car's own hotspot with the phone joined to it, or the car joined to your phone's Personal Hotspot. Both work and the app doesn't care which. To force a fresh search, go to <strong>Settings → Car</strong> and tap <strong>Find</strong>.</p>
+</div>
+
+<div class="card">
+  <h3>The car refuses this phone</h3>
+  <p>Every connection is signed, and the app generates its own key the first time you open it. If the head unit doesn't recognise that key, use the one your computer already uses: AirDrop the computer's ADB key to the phone, then open <strong>Settings → Car → Import ADB key</strong> and pick it. The key is kept in the iOS Keychain and never leaves your phone.</p>
+</div>
+
+<div class="card">
+  <h3>The status says “Service Stopped”</h3>
+  <p>The car answered but the service isn't running. Tap the big button — it reads START in this state — and the status should go green.</p>
+</div>
+
+<div class="card">
+  <h3>What does UPGRADE do?</h3>
+  <p>It installs the version of the service that ships inside this app, replacing whatever the car is running. When the two differ, the button carries a badge showing which build the car is on now and which it would move to. No badge means the car already has this build and pressing it changes nothing.</p>
+</div>
+
+<div class="card">
+  <h3>Nothing here fixed it</h3>
+  <p>Email the address above with the status card's wording and the activity log. The log keeps whatever the car itself reported, which is usually the part that explains it.</p>
+</div>
+
+<h2>What the app needs</h2>
+<ul>
+  <li><strong>iPhone or iPad</strong> running iOS 16 or later.</li>
+  <li><strong>A head unit with wireless debugging already active</strong>, on the same Wi-Fi network as the phone.</li>
+  <li><strong>Local Network permission</strong>, which iOS asks for on first use. Without it iOS blocks every connection to the car and the app can't reach it at all.</li>
+</ul>
+
+<footer>
+  <a href="privacy.html">Privacy policy</a>
+  <span>SP Avatr is developed by Sokpheang Duong.</span>
+</footer>
+
+</div>
+</body>
+</html>
